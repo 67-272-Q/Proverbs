@@ -1,2 +1,12 @@
-<h1>Home#random</h1>
-<p>Find me in app/views/home/random.html.erb</p>
+<p>This site is designed to display a randomly selected quote from a collection of English and Arabic Proverbs.</p>
+<br/>
+<p>  Today's quote of the day is as follows:</p>
+
+<h1><%= @proverb.english %></h1><br>
+<h2><%= @proverb.translation %></h2>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<%= link_to 'Add a new proverb to our list', new_proverb_path %>
+<br>
+<%= link_to 'See all our proverbs here', proverbs_path %>

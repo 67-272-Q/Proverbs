@@ -8,7 +8,7 @@ class Proverb < ApplicationRecord
     scope :active, ->{where(active: true)}
 
     def self.get_random_quote
-        self.active.to_a.sample
+        self.all.to_a.sample
     end
 
 end
