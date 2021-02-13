@@ -3,7 +3,9 @@ class ProverbsController < ApplicationController
 
   # GET /proverbs or /proverbs.json
   def index
-    @proverbs = Proverb.all
+    @proverbs = Proverb.all.alphabetical
+    # call a template by the same name (index.html.erb)
+    # place the template in a layout
   end
 
   # GET /proverbs/1 or /proverbs/1.json
